@@ -5,7 +5,7 @@ const death = document.getElementById("death-el");
 const todayCase = document.getElementById("todayCase-el");
 const todayDeath = document.getElementById("todayDeath-el");
 
-fetch("https://corona.lmao.ninja/v2/countries/malaysia,%20japan,pakistan?yesterday=true&strict=true&query").then(res => {
+fetch("https://corona.lmao.ninja/v2/countries/malaysia,%20japan,pakistan?yesterday=false&strict=true&query").then(res => {
     console.log(res);
     return res.json()
 }).then(data => {
