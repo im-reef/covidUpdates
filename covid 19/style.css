@@ -1,0 +1,191 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+}
+
+section {
+    margin: 2rem auto;
+    background-color: rgb(255, 255, 255);
+    max-width: 60rem;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+aside {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.aside {
+    padding: 2rem 2rem 2rem 19rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.todayCaseHeadline {
+    border-style: none none dotted none;
+    width: 6rem;
+}
+
+.todayDeathHeadline {
+    border-style: none none dotted none;
+    width: 7rem;
+}
+
+
+
+span {
+    margin-left: 1.25rem;
+}
+
+
+.img-header {
+    width: 4rem;
+    height: 2.5rem;
+    text-align: right;
+    padding: 0;
+    border: solid grey 2px;
+}
+
+.img-aside {
+    width: 5rem;
+    display: inline;
+}
+
+.aside-headline {
+    text-align: left;
+    margin-top: 0;
+
+}
+
+.aside-content {
+    text-align: left;
+    font-size: smaller;
+    margin: 0;
+}
+
+.total-case {
+    margin-top: 0;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.total-death {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.today-case {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.today-death {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.NovelCOVIDAPI {
+    
+    text-decoration: underline;
+
+}
+
+#cases-el {
+    color: rgb(107, 107, 107);
+}
+
+#death-el {
+    color: rgb(107, 107, 107);
+}
+
+#todayCase-el {
+    color: rgb(107, 107, 107);
+}
+
+#todayDeath-el {
+    color: rgb(107, 107, 107);
+}
+
+@media (max-width: 1440px){
+    .aside {
+        padding: 2rem 2rem 2rem 15rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1370px){
+    .aside {
+        padding: 2rem 2rem 2rem 12rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    .aside {
+        padding: 2rem 2rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    .total-case, .total-death, .today-case, .today-death {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: left;
+        font-size: 13px;
+
+    }
+
+    .todayCaseHeadline {
+        border-style: none none dotted none;
+        width: 5rem;
+    }
+    
+    .todayDeathHeadline {
+        border-style: none none dotted none;
+        width: 5.2rem;
+    }
+
+    section {
+        margin: 0 auto 1rem auto;
+        background-color: rgb(255, 255, 255);
+        max-width: 60rem;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .aside-content {
+        text-align: left;
+        font-size: smaller;
+        margin: 0;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 320px) {
+    .total-case, .total-death, .today-case, .today-death {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: left;
+        font-size: 10px;
+
+    }
+}
