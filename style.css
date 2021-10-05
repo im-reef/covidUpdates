@@ -104,7 +104,7 @@ span {
 }
 
 .date {
-    padding-left: 2rem;
+    margin-left: 2rem;
     text-align: left;
     font-size: 13px;
     color: rgb(148, 146, 146);
