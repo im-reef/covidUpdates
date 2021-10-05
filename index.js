@@ -1,9 +1,13 @@
 console.log("hello world")
+const date = new Date();
 
 const cases = document.getElementById("cases-el");
 const death = document.getElementById("death-el");
 const todayCase = document.getElementById("todayCase-el");
 const todayDeath = document.getElementById("todayDeath-el");
+const dateToday = document.getElementById("date");
+
+dateToday.innerHTML = date.toDateString();
 
 fetch("https://corona.lmao.ninja/v2/countries/malaysia,%20japan,pakistan?yesterday=false&strict=true&query").then(res => {
     console.log(res);
