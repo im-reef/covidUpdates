@@ -33,22 +33,46 @@ fetch("https://corona.lmao.ninja/v2/countries/malaysia,%20japan,pakistan?yesterd
     //today case
     if (malaysia.todayCases === 0) {
         malaysia.todayCases = "n/a";
-    };
+    }else {
+        malaysia.todayCases = "+ " + malaysia.todayCases
+    }
 
     if (japan.todayCases === 0) {
         japan.todayCases = "n/a";
-    };
+    }else {
+        japan.todayCases = "+ " + japan.todayCases
+    }
 
     if (pakistan.todayCases === 0) {
         pakistan.todayCases = "n/a";
-    };
+    }else {
+        pakistan.todayCases = "+ " + pakistan.todayCases
+    }
 
     todayCase.innerHTML = `
-    Malaysia: ${"   " + "+" + malaysia.todayCases}
-    <span>Japan: ${"   " + "+" + japan.todayCases}</span>
-    <span>Pakistan: ${"   " + "+" + pakistan.todayCases}</span>
+    Malaysia: ${"   " + malaysia.todayCases}
+    <span>Japan: ${"   " + japan.todayCases}</span>
+    <span>Pakistan: ${"   "+ pakistan.todayCases}</span>
     `
     //today death
+    if (malaysia.todayDeaths === 0) {
+        malaysia.todayDeaths = "n/a";
+    }else {
+        malaysia.todayDeaths = "+ " + malaysia.todayDeaths
+    }
+
+    if (japan.todayDeaths === 0) {
+        japan.todayDeaths = "n/a";
+    }else {
+        japan.todayDeaths = "+ " + japan.todayDeaths
+    }
+
+    if (pakistan.todayDeaths === 0) {
+        pakistan.todayDeaths = "n/a";
+    }else {
+        pakistan.todayDeaths = "+ " + pakistan.todayDeaths
+    }
+
     todayDeath.innerHTML = `
     Malaysia: ${"   " + "+" + malaysia.todayDeaths}
     <span>Japan: ${"   " + "+" + japan.todayDeaths}</span>
