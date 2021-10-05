@@ -31,6 +31,18 @@ fetch("https://corona.lmao.ninja/v2/countries/malaysia,%20japan,pakistan?yesterd
     <span>Pakistan: ${"   " + pakistan.deaths}</span>
     `
     //today case
+    if (malaysia.todayCases === 0) {
+        malaysia.todayCases = "n/a";
+    };
+
+    if (japan.todayCases === 0) {
+        japan.todayCases = "n/a";
+    };
+
+    if (pakistan.todayCases === 0) {
+        pakistan.todayCases = "n/a";
+    };
+
     todayCase.innerHTML = `
     Malaysia: ${"   " + "+" + malaysia.todayCases}
     <span>Japan: ${"   " + "+" + japan.todayCases}</span>
