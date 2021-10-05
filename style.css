@@ -186,11 +186,11 @@ span {
     }
 
     .date {
-    margin-left: 1rem;
-    text-align: left;
-    font-size: 10px;
-    color: rgb(148, 146, 146);
-}
+        margin-left: 1rem;
+        text-align: left;
+        font-size: 10px;
+        color: rgb(148, 146, 146);
+    }
 
 }
 
