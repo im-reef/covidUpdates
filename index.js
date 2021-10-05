@@ -74,8 +74,8 @@ fetch("https://corona.lmao.ninja/v2/countries/malaysia,%20japan,pakistan?yesterd
     }
 
     todayDeath.innerHTML = `
-    Malaysia: ${"   " + "+" + malaysia.todayDeaths}
-    <span>Japan: ${"   " + "+" + japan.todayDeaths}</span>
-    <span>Pakistan: ${"   " + "+" + pakistan.todayDeaths}</span>
+    Malaysia: ${"   " + malaysia.todayDeaths}
+    <span>Japan: ${"   " + japan.todayDeaths}</span>
+    <span>Pakistan: ${"   " + pakistan.todayDeaths}</span>
     `
 })
