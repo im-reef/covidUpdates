@@ -9,7 +9,7 @@ const dateToday = document.getElementById("date");
 
 dateToday.innerHTML = date.toDateString();
 
-fetch("https://disease.sh/v3/covid-19/countries/malaysia,%20japan,%20pakistan?strict=true? yesterday=true").then(res => {
+fetch("https://disease.sh/v3/covid-19/countries/Malaysia%2CJapan%2CPakistan?yesterday=true").then(res => {
     console.log(res);
     return res.json()
 }).then(data => {
