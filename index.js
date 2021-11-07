@@ -28,13 +28,15 @@ fetch("https://disease.sh/v3/covid-19/countries/Malaysia%2CJapan%2CPakistan?yest
         <li>Malaysia: ${"   " + malaysia.cases}</li>
         <li>Japan: ${"   " + japan.cases}</li>
         <li>Pakistan: ${"   " + pakistan.cases}</li>
-    <ul>
+    </ul>
     `
     //total death 
     death.innerHTML = `
-    Malaysia: ${"   " + malaysia.deaths}
-    <span>Japan: ${"   " + japan.deaths}</span>
-    <span>Pakistan: ${"   " + pakistan.deaths}</span>
+    <ul>
+        <li>Malaysia: ${"   " + malaysia.deaths}</li>
+        <li>Japan: ${"   " + japan.deaths}</li>
+        <li>Pakistan: ${"   " + pakistan.deaths}</li>
+    </ul>
     `
     //today case
     if (malaysia.todayCases === 0) {
@@ -56,9 +58,11 @@ fetch("https://disease.sh/v3/covid-19/countries/Malaysia%2CJapan%2CPakistan?yest
     }
 
     todayCase.innerHTML = `
-    Malaysia: ${"   " + malaysia.todayCases}
-    <span>Japan: ${"   " + japan.todayCases}</span>
-    <span>Pakistan: ${"   "+ pakistan.todayCases}</span>
+    <ul>
+        <li>Malaysia: ${"   " + malaysia.todayCases}</li>
+        <li>Japan: ${"   " + japan.todayCases}</li>
+        <li>Pakistan: ${"   "+ pakistan.todayCases}</li>
+    </ul>
     `
     //today death
     if (malaysia.todayDeaths === 0) {
@@ -80,8 +84,10 @@ fetch("https://disease.sh/v3/covid-19/countries/Malaysia%2CJapan%2CPakistan?yest
     }
 
     todayDeath.innerHTML = `
-    Malaysia: ${"   " + malaysia.todayDeaths}
-    <span>Japan: ${"   " + japan.todayDeaths}</span>
-    <span>Pakistan: ${"   " + pakistan.todayDeaths}</span>
+    <ul>
+        <li>Malaysia: ${"   " + malaysia.todayDeaths}</li>
+        <li>Japan: ${"   " + japan.todayDeaths}</li>
+        <li>Pakistan: ${"   " + pakistan.todayDeaths}</li>
+    </ul>
     `
 })
