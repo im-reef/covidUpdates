@@ -24,9 +24,11 @@ fetch("https://disease.sh/v3/covid-19/countries/Malaysia%2CJapan%2CPakistan?yest
 
     //total case
     cases.innerHTML = `
-    Malaysia: ${"   " + malaysia.cases}
-    <span>Japan: ${"   " + japan.cases}</span>
-    <span>Pakistan: ${"   " + pakistan.cases}</span>
+    <ul>
+        <li>Malaysia: ${"   " + malaysia.cases}</li>
+        <li>Japan: ${"   " + japan.cases}</li>
+        <li>Pakistan: ${"   " + pakistan.cases}</li>
+    <ul>
     `
     //total death 
     death.innerHTML = `
