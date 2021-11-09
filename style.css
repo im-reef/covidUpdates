@@ -31,6 +31,16 @@ a {
     flex-direction: column;
 }
 
+.total {
+    display: flex;
+    flex-direction: row;
+}
+
+.today {
+    display: flex;
+    flex-direction: row;
+}
+
 .todayCaseHeadline {
     border-style: none none dotted none;
     width: 6rem;
@@ -158,6 +168,16 @@ span {
         text-align: left;
         font-size: 13px;
 
+    }
+
+    .total {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .today {
+        display: flex;
+        flex-direction: column;
     }
 
     .todayCaseHeadline {
