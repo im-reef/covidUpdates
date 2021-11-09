@@ -56,7 +56,8 @@ a {
 
 
 span {
-    margin-left: 1.25rem;
+    font-weight: normal;
+    font-style: italic;
 }
 
 
