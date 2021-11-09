@@ -34,11 +34,13 @@ a {
 .total {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .today {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .todayCaseHeadline {
@@ -90,19 +92,19 @@ span {
 }
 
 .total-death {
-    margin-top: 2rem;
+    margin-top: 0;
     margin-left: 2rem;
     text-align: left;
 }
 
 .today-case {
-    margin-top: 2rem;
+    margin-top: 0;
     margin-left: 2rem;
     text-align: left;
 }
 
 .today-death {
-    margin-top: 2rem;
+    margin-top: 0;
     margin-left: 2rem;
     text-align: left;
 }
@@ -162,7 +164,7 @@ span {
 
 @media (max-width: 425px) {
     .total-case, .total-death, .today-case, .today-death {
-        margin-top: 2rem;
+        margin-top: 0;
         margin-left: 1rem;
         margin-right: 1rem;
         text-align: left;
@@ -173,11 +175,13 @@ span {
     .total {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
     }
 
     .today {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
     }
 
     .todayCaseHeadline {
@@ -216,7 +220,7 @@ span {
 
 @media (max-width: 320px) {
     .total-case, .total-death, .today-case, .today-death {
-        margin-top: 2rem;
+        margin-top: 0;
         margin-left: 1rem;
         margin-right: 1rem;
         text-align: left;
