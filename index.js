@@ -25,17 +25,17 @@ fetch("https://disease.sh/v3/covid-19/countries/Malaysia%2CJapan%2CPakistan?yest
     //total case
     cases.innerHTML = `
     <ul>
-        <li>Malaysia: ${"   " + malaysia.cases}</li>
-        <li>Japan: ${"   " + japan.cases}</li>
-        <li>Pakistan: ${"   " + pakistan.cases}</li>
+        <li><span>Malaysia:</span> ${"   " + malaysia.cases}</li>
+        <li><span>Japan:</span> ${"   " + japan.cases}</li>
+        <li><span>Pakistan:</span> ${"   " + pakistan.cases}</li>
     </ul>
     `
     //total death 
     death.innerHTML = `
     <ul>
-        <li>Malaysia: ${"   " + malaysia.deaths}</li>
-        <li>Japan: ${"   " + japan.deaths}</li>
-        <li>Pakistan: ${"   " + pakistan.deaths}</li>
+        <li><span>Malaysia:</span> ${"   " + malaysia.deaths}</li>
+        <li><span>Japan:</span> ${"   " + japan.deaths}</li>
+        <li><span>Pakistan:</span> ${"   " + pakistan.deaths}</li>
     </ul>
     `
     //today case
@@ -59,9 +59,9 @@ fetch("https://disease.sh/v3/covid-19/countries/Malaysia%2CJapan%2CPakistan?yest
 
     todayCase.innerHTML = `
     <ul>
-        <li>Malaysia: ${"   " + malaysia.todayCases}</li>
-        <li>Japan: ${"   " + japan.todayCases}</li>
-        <li>Pakistan: ${"   "+ pakistan.todayCases}</li>
+        <li><span>Malaysia:</span> ${"   " + malaysia.todayCases}</li>
+        <li><span>Japan:</span> ${"   " + japan.todayCases}</li>
+        <li><span>Pakistan:</span> ${"   "+ pakistan.todayCases}</li>
     </ul>
     `
     //today death
@@ -85,9 +85,9 @@ fetch("https://disease.sh/v3/covid-19/countries/Malaysia%2CJapan%2CPakistan?yest
 
     todayDeath.innerHTML = `
     <ul>
-        <li>Malaysia: ${"   " + malaysia.todayDeaths}</li>
-        <li>Japan: ${"   " + japan.todayDeaths}</li>
-        <li>Pakistan: ${"   " + pakistan.todayDeaths}</li>
+        <li><span>Malaysia:</span> ${"   " + malaysia.todayDeaths}</li>
+        <li><span>Japan:</span> ${"   " + japan.todayDeaths}</li>
+        <li><span>Pakistan:</span> ${"   " + pakistan.todayDeaths}</li>
     </ul>
     `
 })
